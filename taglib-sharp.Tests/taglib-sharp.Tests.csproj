@@ -1,0 +1,3766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2F98931-9246-46A4-BECA-76BA8C30E11E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>taglib_sharp.Tests</RootNamespace>
+    <AssemblyName>taglib-sharp.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ExtendedReflection, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ExtendedReflection.Reasoning, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Pex.Framework, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\taglib-sharp.csproj">
+      <Project>{6B143A39-C7B2-4743-9917-92262C60E9A6}</Project>
+      <Name>taglib-sharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aac\AudioHeaderTest.FindTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.FindTest01.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\BitStreamTest.ConstructorTest.g.cs">
+      <DependentUpon>BitStreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\BitStreamTest.ReadInt32Test.g.cs">
+      <DependentUpon>BitStreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aiff\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aiff\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aiff\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aiff\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\FileTest.cs" />
+    <Compile Include="Ape\ItemTest.CloneTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ConstructorTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ConstructorTest01.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ConstructorTest02.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ConstructorTest03.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.KeyGetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ReadOnlyGetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ReadOnlySetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.RenderTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.SizeGetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ToStringArrayTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ToStringTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.TypeGetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.TypeSetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.ValueGetTest.g.cs">
+      <DependentUpon>ItemTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ConstructorTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ConstructorTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.cs" />
+    <Compile Include="Aac\BitStreamTest.cs" />
+    <Compile Include="Aac\FileTest.cs" />
+    <Compile Include="Aiff\FileTest.cs" />
+    <Compile Include="Audible\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\FileTest.cs" />
+    <Compile Include="Audible\TagTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.AuthorGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.ConstructorTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.DescriptionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.NarratorGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audible\TagTest.TitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IIM\IIMReaderTest.ConstructorTest.g.cs">
+      <DependentUpon>IIMReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IIM\IIMReaderTest.ProcessTest.g.cs">
+      <DependentUpon>IIMReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\CodecTest.ConstructorTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\CodecTest.ConstructorTest01.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\CodecTest.cs" />
+    <Compile Include="Tiff\CodecTest.DescriptionGetTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Rw2\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Rw2\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Rw2\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Rw2\IFDReaderTest.ConstructorTest.g.cs">
+      <DependentUpon>IFDReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Rw2\IFDReaderTest.cs" />
+    <Compile Include="Tiff\Rw2\IFDTagTest.cs" />
+    <Compile Include="Tiff\Rw2\FileTest.cs" />
+    <Compile Include="Tiff\Pef\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Pef\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Pef\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Pef\FileTest.cs" />
+    <Compile Include="Tiff\Nef\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Nef\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Nef\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Nef\FileTest.cs" />
+    <Compile Include="Tiff\Dng\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Dng\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Dng\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Dng\FileTest.cs" />
+    <Compile Include="Tiff\Cr2\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Cr2\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Cr2\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Cr2\FileTest.cs" />
+    <Compile Include="Tiff\Arw\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Arw\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Arw\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\Arw\FileTest.cs" />
+    <Compile Include="Tiff\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiff\FileTest.cs" />
+    <Compile Include="Png\CodecTest.ConstructorTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\CodecTest.cs" />
+    <Compile Include="Png\CodecTest.DescriptionGetTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\FileTest.cs" />
+    <Compile Include="NonContainer\EndTagTest.ConstructorTest.g.cs">
+      <DependentUpon>EndTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\EndTagTest.cs" />
+    <Compile Include="Mpc\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpc\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpc\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpc\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpc\FileTest.cs" />
+    <Compile Include="Jpeg\CodecTest.ConstructorTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\CodecTest.cs" />
+    <Compile Include="Jpeg\CodecTest.DescriptionGetTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\FileTest.cs" />
+    <Compile Include="Gif\CodecTest.ConstructorTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\CodecTest.cs" />
+    <Compile Include="Gif\CodecTest.DescriptionGetTest.g.cs">
+      <DependentUpon>CodecTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\FileTest.cs" />
+    <Compile Include="Flac\BlockTest.ConstructorTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.ConstructorTest01.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.cs" />
+    <Compile Include="Dsf\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dsf\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dsf\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dsf\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dsf\FileTest.cs" />
+    <Compile Include="Flac\BlockTest.DataGetTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.DataSizeGetTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.IsLastBlockGetTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.RenderTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.TotalSizeGetTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\BlockTest.TypeGetTest.g.cs">
+      <DependentUpon>BlockTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\FileTest.cs" />
+    <Compile Include="Flac\MetadataTest.ClearTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\MetadataTest.ConstructorTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\MetadataTest.cs" />
+    <Compile Include="Flac\MetadataTest.GetCommentTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\MetadataTest.PicturesGetTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\MetadataTest.PicturesSetTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\MetadataTest.RemoveCommentTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\MetadataTest.TagTypesGetTest.g.cs">
+      <DependentUpon>MetadataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.ColorDepthGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.ColorDepthSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.ConstructorTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.ConstructorTest01.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.DataGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.DataSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.DescriptionGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.DescriptionSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.FilenameGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.FilenameSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.HeightGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.HeightSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.IndexedColorsGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.IndexedColorsSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.MimeTypeGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.MimeTypeSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.RenderTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.TypeGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.TypeSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.WidthGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flac\PictureTest.WidthSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\GifCommentTagTest.ClearTest.g.cs">
+      <DependentUpon>GifCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\GifCommentTagTest.CommentGetTest.g.cs">
+      <DependentUpon>GifCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\GifCommentTagTest.CommentSetTest.g.cs">
+      <DependentUpon>GifCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\GifCommentTagTest.ConstructorTest.g.cs">
+      <DependentUpon>GifCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\GifCommentTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>GifCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gif\GifCommentTagTest.cs" />
+    <Compile Include="Gif\GifCommentTagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>GifCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\StringHandlerTest.ParseTest.g.cs">
+      <DependentUpon>StringHandlerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\StringHandlerTest.RenderTest.g.cs">
+      <DependentUpon>StringHandlerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IIM\IIMReaderTest.cs" />
+    <Compile Include="IIM\IIMTagTest.cs" />
+    <Compile Include="Jpeg\JpegCommentTagTest.ClearTest.g.cs">
+      <DependentUpon>JpegCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\JpegCommentTagTest.CommentGetTest.g.cs">
+      <DependentUpon>JpegCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\JpegCommentTagTest.CommentSetTest.g.cs">
+      <DependentUpon>JpegCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\JpegCommentTagTest.ConstructorTest.g.cs">
+      <DependentUpon>JpegCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\JpegCommentTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>JpegCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jpeg\JpegCommentTagTest.cs" />
+    <Compile Include="Jpeg\JpegCommentTagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>JpegCommentTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\AudioFileTest.ConstructorTest.g.cs">
+      <DependentUpon>AudioFileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\AudioFileTest.ConstructorTest01.g.cs">
+      <DependentUpon>AudioFileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\AudioFileTest.ConstructorTest02.g.cs">
+      <DependentUpon>AudioFileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\AudioFileTest.ConstructorTest03.g.cs">
+      <DependentUpon>AudioFileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\AudioFileTest.cs" />
+    <Compile Include="Mpeg\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg\FileTest.cs" />
+    <Compile Include="Image\CombinedImageTagTest.ConstructorTest.g.cs">
+      <DependentUpon>CombinedImageTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image\CombinedImageTagTest.cs" />
+    <Compile Include="Image\NoMetadata\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image\NoMetadata\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image\NoMetadata\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image\NoMetadata\FileTest.cs" />
+    <Compile Include="IDF\Entries\ByteIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>ByteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ByteIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>ByteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ByteVectorIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>ByteVectorIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ByteVectorIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\ByteIFDEntryTest.cs" />
+    <Compile Include="IDF\ArrayIFDEntryTTest.cs" />
+    <Compile Include="Asf\ContentDescriptionObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>ContentDescriptionObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptionObjectTest.ConstructorTest01.g.cs">
+      <DependentUpon>ContentDescriptionObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptionObjectTest.cs" />
+    <Compile Include="Asf\ContentDescriptorTest.ConstructorTest.g.cs">
+      <DependentUpon>ContentDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptorTest.ConstructorTest01.g.cs">
+      <DependentUpon>ContentDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptorTest.ConstructorTest02.g.cs">
+      <DependentUpon>ContentDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptorTest.ConstructorTest03.g.cs">
+      <DependentUpon>ContentDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptorTest.ConstructorTest04.g.cs">
+      <DependentUpon>ContentDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptorTest.ConstructorTest05.g.cs">
+      <DependentUpon>ContentDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ContentDescriptorTest.cs" />
+    <Compile Include="Asf\DescriptionRecordTest.ConstructorTest.g.cs">
+      <DependentUpon>DescriptionRecordTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\DescriptionRecordTest.ConstructorTest01.g.cs">
+      <DependentUpon>DescriptionRecordTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\DescriptionRecordTest.ConstructorTest02.g.cs">
+      <DependentUpon>DescriptionRecordTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\DescriptionRecordTest.ConstructorTest03.g.cs">
+      <DependentUpon>DescriptionRecordTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\DescriptionRecordTest.ConstructorTest04.g.cs">
+      <DependentUpon>DescriptionRecordTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\DescriptionRecordTest.ConstructorTest05.g.cs">
+      <DependentUpon>DescriptionRecordTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ExtendedContentDescriptionObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>ExtendedContentDescriptionObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ExtendedContentDescriptionObjectTest.ConstructorTest01.g.cs">
+      <DependentUpon>ExtendedContentDescriptionObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\ExtendedContentDescriptionObjectTest.cs" />
+    <Compile Include="Asf\FilePropertiesObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>FilePropertiesObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\FileTest.cs" />
+    <Compile Include="Asf\HeaderExtensionObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>HeaderExtensionObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\HeaderExtensionObjectTest.cs" />
+    <Compile Include="Asf\HeaderObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>HeaderObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\HeaderObjectTest.cs" />
+    <Compile Include="Asf\MetadataLibraryObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>MetadataLibraryObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\MetadataLibraryObjectTest.ConstructorTest01.g.cs">
+      <DependentUpon>MetadataLibraryObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\PaddingObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>PaddingObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\PaddingObjectTest.ConstructorTest01.g.cs">
+      <DependentUpon>PaddingObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\StreamPropertiesObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>StreamPropertiesObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ConstructorTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\UnknownObjectTest.ConstructorTest.g.cs">
+      <DependentUpon>UnknownObjectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\DescriptionRecordTest.cs" />
+    <Compile Include="Asf\FilePropertiesObjectTest.cs" />
+    <Compile Include="IDF\ArrayIFDEntryTTest.RenderTest.g.cs">
+      <DependentUpon>ArrayIFDEntryTTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ByteVectorIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>ByteVectorIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\LongArrayIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>LongArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\LongArrayIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>LongArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\LongIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>LongIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\LongIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>LongIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\MakernoteIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>MakernoteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\MakernoteIFDEntryTest.ConstructorTest01.g.cs">
+      <DependentUpon>MakernoteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\MakernoteIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>MakernoteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\RationalArrayIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>RationalArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\RationalArrayIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>RationalArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\RationalIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>RationalIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\RationalIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>RationalIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SByteIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SByteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SByteIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SByteIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ShortArrayIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>ShortArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ShortArrayIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>ShortArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ShortIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>ShortIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ShortIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>ShortIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SLongArrayIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SLongArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SLongArrayIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SLongArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SLongIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SLongIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SLongIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SLongIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SRationalArrayIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SRationalArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SRationalArrayIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SRationalArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SRationalIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SRationalIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SRationalIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SRationalIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SShortArrayIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SShortArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SShortArrayIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SShortArrayIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SShortIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SShortIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SShortIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SShortIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\StringIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>StringIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\StringIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>StringIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\StripOffsetsIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>StripOffsetsIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\StripOffsetsIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>StripOffsetsIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SubIFDArrayEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SubIFDArrayEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SubIFDArrayEntryTest.RenderTest.g.cs">
+      <DependentUpon>SubIFDArrayEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SubIFDEntryTest.ChildCountGetTest.g.cs">
+      <DependentUpon>SubIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SubIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>SubIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\SubIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>SubIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ThumbnailDataIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>ThumbnailDataIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\ThumbnailDataIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>ThumbnailDataIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\UndefinedIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>UndefinedIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\UndefinedIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>UndefinedIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\UserCommentIFDEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>UserCommentIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\UserCommentIFDEntryTest.ConstructorTest01.g.cs">
+      <DependentUpon>UserCommentIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\UserCommentIFDEntryTest.RenderTest.g.cs">
+      <DependentUpon>UserCommentIFDEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDReaderTest.ConstructorTest.g.cs">
+      <DependentUpon>IFDReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDReaderTest.cs" />
+    <Compile Include="IDF\IFDRendererTest.ConstructorTest.g.cs">
+      <DependentUpon>IFDRendererTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDRendererTest.cs" />
+    <Compile Include="IDF\IFDRendererTest.RenderTest.g.cs">
+      <DependentUpon>IFDRendererTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.AddEntryTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.ConstructorTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.ContainsTagTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.cs" />
+    <Compile Include="IDF\IFDStructureTest.DirectoriesGetTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetByteValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetDateTimeValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetEntryTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetEntryTest01.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetLongValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetRationalValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.GetStringValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.RemoveTagTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.RemoveTagTest01.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.SetByteValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.SetDateTimeValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.SetEntryTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.SetLongValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.SetRationalValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDStructureTest.SetStringValueTest.g.cs">
+      <DependentUpon>IFDStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.AltitudeGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.AltitudeSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ClearTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.CommentGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.CommentSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ConstructorTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.CreatorGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.CreatorSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.cs" />
+    <Compile Include="IDF\IFDTagTest.DateTimeDigitizedGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.DateTimeDigitizedSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.DateTimeGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.DateTimeOriginalGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.DateTimeOriginalSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.DateTimeSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ExifIFDGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ExposureTimeGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ExposureTimeSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.FNumberGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.FNumberSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.FocalLengthGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.FocalLengthIn35mmFilmGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.FocalLengthIn35mmFilmSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.FocalLengthSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.GPSIFDGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ISOSpeedRatingsGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ISOSpeedRatingsSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.LatitudeGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.LatitudeSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.LongitudeGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.LongitudeSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.MakeGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.MakeSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ModelGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.ModelSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.OrientationGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.OrientationSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.SoftwareGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.SoftwareSetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\IFDTagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>IFDTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDF\Entries\LongArrayIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\LongIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\MakernoteIFDEntryTest.cs" />
+    <Compile Include="IDF\Makernotes\Nikon3MakernoteReaderTest.ConstructorTest.g.cs">
+      <DependentUpon>Nikon3MakernoteReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\ItemTest.cs" />
+    <Compile Include="Matroska\AttachmentTest.ConstructorTest.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.ConstructorTest01.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.ConstructorTest02.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.ConstructorTest03.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.ConstructorTest04.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.cs" />
+    <Compile Include="Matroska\AttachmentTest.SetFilenameFromTypeTest.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.SetTypeFromFilenameTest.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.UIDGetTest.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.UIDSetTest.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AttachmentTest.UIDTypeGetTest.g.cs">
+      <DependentUpon>AttachmentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AudioTrackTest.AudioBitrateGetTest.g.cs">
+      <DependentUpon>AudioTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AudioTrackTest.AudioChannelsGetTest.g.cs">
+      <DependentUpon>AudioTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AudioTrackTest.AudioSampleRateGetTest.g.cs">
+      <DependentUpon>AudioTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AudioTrackTest.ConstructorTest.g.cs">
+      <DependentUpon>AudioTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AudioTrackTest.cs" />
+    <Compile Include="Matroska\AudioTrackTest.MediaTypesGetTest.g.cs">
+      <DependentUpon>AudioTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\AudioTrackTest.UnknownElementsGetTest.g.cs">
+      <DependentUpon>AudioTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.ConstructorTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.ConstructorTest01.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.ConstructorTest02.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.ConstructorTest03.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.cs" />
+    <Compile Include="Matroska\EBMLelementTest.DataSizeGetTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.DataSizeSizeGetTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.EBMLByteSizeTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.GetBoolTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.GetBytesTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.GetDoubleTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.GetStringTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.GetULongTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.HeaderGetTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.IDSizeGetTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.IncrementSizeTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.SetDataTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.SetDataTest01.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.SizeGetTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLelementTest.WriteTest.g.cs">
+      <DependentUpon>EBMLelementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.AbstractGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ConstructorTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ConstructorTest01.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ConstructorTest02.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.cs" />
+    <Compile Include="Matroska\EBMLreaderTest.DataOffsetGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.DataSizeGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.DataSizeSetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.IDGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.OffsetGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.OffsetSetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ParentGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ReadBoolTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ReadBytesTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ReadDoubleTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ReadStringTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ReadTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.ReadULongTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.RemoveTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.SetVoidTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.SizeGetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.SizeSetTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.WriteDataSizeTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\EBMLreaderTest.WriteVoidTest.g.cs">
+      <DependentUpon>EBMLreaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.ConstructorTest.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.op_ImplicitTest.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.TagLanguageGetTest.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.TagLanguageSetTest.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.ValueGetTest.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SimpleTagTest.ValueSetTest.g.cs">
+      <DependentUpon>SimpleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SubtitleTrackTest.ConstructorTest.g.cs">
+      <DependentUpon>SubtitleTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SubtitleTrackTest.MediaTypesGetTest.g.cs">
+      <DependentUpon>SubtitleTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\SubtitleTrackTest.UnknownElementsGetTest.g.cs">
+      <DependentUpon>SubtitleTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.AttachmentsGetTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.AttachmentsSetTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.ConstructorTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.GetTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.GetTest01.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.MediumGetTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagsTest.TracksGetTest.g.cs">
+      <DependentUpon>TagsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.ConstructorTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.DescriptionGetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.DurationGetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.MediaTypesGetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.UIDGetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.UIDSetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.UIDTypeGetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TrackTest.UnknownElementsGetTest.g.cs">
+      <DependentUpon>TrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\UIDElementTest.ConstructorTest.g.cs">
+      <DependentUpon>UIDElementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\UIDElementTest.GenUIDTest.g.cs">
+      <DependentUpon>UIDElementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\UIDElementTest.UIDGetTest.g.cs">
+      <DependentUpon>UIDElementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\UIDElementTest.UIDSetTest.g.cs">
+      <DependentUpon>UIDElementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\UIDElementTest.UIDTypeGetTest.g.cs">
+      <DependentUpon>UIDElementTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\VideoTrackTest.ConstructorTest.g.cs">
+      <DependentUpon>VideoTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\VideoTrackTest.MediaTypesGetTest.g.cs">
+      <DependentUpon>VideoTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\VideoTrackTest.UnknownElementsGetTest.g.cs">
+      <DependentUpon>VideoTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\VideoTrackTest.VideoHeightGetTest.g.cs">
+      <DependentUpon>VideoTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\VideoTrackTest.VideoWidthGetTest.g.cs">
+      <DependentUpon>VideoTrackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\MetadataLibraryObjectTest.cs" />
+    <Compile Include="IDF\Makernotes\Nikon3MakernoteReaderTest.cs" />
+    <Compile Include="NonContainer\EndTagTest.ReadTest.g.cs">
+      <DependentUpon>EndTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\EndTagTest.RemoveTagsTest.g.cs">
+      <DependentUpon>EndTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\EndTagTest.RenderTest.g.cs">
+      <DependentUpon>EndTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\EndTagTest.TotalSizeGetTest.g.cs">
+      <DependentUpon>EndTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\EndTagTest.WriteTest.g.cs">
+      <DependentUpon>EndTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\StartTagTest.ConstructorTest.g.cs">
+      <DependentUpon>StartTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\StartTagTest.ReadTest.g.cs">
+      <DependentUpon>StartTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\StartTagTest.RemoveTagsTest.g.cs">
+      <DependentUpon>StartTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\StartTagTest.RenderTest.g.cs">
+      <DependentUpon>StartTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\StartTagTest.TotalSizeGetTest.g.cs">
+      <DependentUpon>StartTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\StartTagTest.WriteTest.g.cs">
+      <DependentUpon>StartTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.EndTagGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.ReadEndTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.ReadStartTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.ReadTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.RemoveTagsTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.StartTagGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonContainer\TagTest.WriteTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\BitstreamTest.ConstructorTest.g.cs">
+      <DependentUpon>BitstreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\BitstreamTest.cs" />
+    <Compile Include="Ogg\Codecs\OpusTest.FromPacketTest.g.cs">
+      <DependentUpon>OpusTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\Codecs\TheoraTest.FromPacketTest.g.cs">
+      <DependentUpon>TheoraTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\Codecs\VorbisTest.FromPacketTest.g.cs">
+      <DependentUpon>VorbisTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\FileTest.cs" />
+    <Compile Include="Ogg\GroupedCommentTest.AddCommentTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AddCommentTest01.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumArtistsSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumArtistsSortGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumArtistsSortSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumSortGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AlbumSortSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AmazonIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.AmazonIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.BeatsPerMinuteGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.BeatsPerMinuteSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ClearTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.CommentGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.CommentSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.CommentsGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ComposersGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ComposersSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ComposersSortGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ComposersSortSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ConductorGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ConductorSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ConstructorTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.CopyrightGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.CopyrightSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoAudioSampleEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoAudioSampleEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoAudioSampleEntryTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoChunkLargeOffsetBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoChunkLargeOffsetBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoChunkLargeOffsetBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoChunkOffsetBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoChunkOffsetBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoChunkOffsetBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoFreeSpaceBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>IsoFreeSpaceBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.DataGetTest.g.cs">
+      <DependentUpon>IsoFreeSpaceBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.DataSetTest.g.cs">
+      <DependentUpon>IsoFreeSpaceBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.PaddingSizeGetTest.g.cs">
+      <DependentUpon>IsoFreeSpaceBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoFreeSpaceBoxTest.PaddingSizeSetTest.g.cs">
+      <DependentUpon>IsoFreeSpaceBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoHandlerBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoHandlerBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoHandlerBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>IsoHandlerBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoHandlerBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoMetaBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoMetaBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoMetaBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>IsoMetaBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoMetaBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoMovieHeaderBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoMovieHeaderBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoMovieHeaderBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoSampleDescriptionBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoSampleDescriptionBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoSampleDescriptionBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoSampleEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoSampleEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoSampleEntryTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoSampleTableBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoSampleTableBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoSampleTableBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoUserDataBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoUserDataBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoUserDataBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>IsoUserDataBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoUserDataBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\IsoVisualSampleEntryTest.ConstructorTest.g.cs">
+      <DependentUpon>IsoVisualSampleEntryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\IsoVisualSampleEntryTest.cs" />
+    <Compile Include="Mpeg4\Boxes\AppleAdditionalInfoBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>AppleAdditionalInfoBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleAdditionalInfoBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>AppleAdditionalInfoBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleAdditionalInfoBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\AppleAnnotationBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>AppleAnnotationBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleAnnotationBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>AppleAnnotationBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleAnnotationBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\AppleDataBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>AppleDataBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleDataBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>AppleDataBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleDataBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\AppleElementaryStreamDescriptorTest.ConstructorTest.g.cs">
+      <DependentUpon>AppleElementaryStreamDescriptorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleElementaryStreamDescriptorTest.cs" />
+    <Compile Include="Mpeg4\Boxes\AppleItemListBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>AppleItemListBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleItemListBoxTest.ConstructorTest01.g.cs">
+      <DependentUpon>AppleItemListBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\AppleItemListBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\TextBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>TextBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\UnknownBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>UnknownBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\Boxes\UrlBoxTest.ConstructorTest.g.cs">
+      <DependentUpon>UrlBoxTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\BoxTest.cs" />
+    <Compile Include="Mpeg4\BoxFactoryTest.CreateBoxTest01.g.cs">
+      <DependentUpon>BoxFactoryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\BoxFactoryTest.CreateBoxTest02.g.cs">
+      <DependentUpon>BoxFactoryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\BoxFactoryTest.CreateBoxTest03.g.cs">
+      <DependentUpon>BoxFactoryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\BoxFactoryTest.CreateBoxTest04.g.cs">
+      <DependentUpon>BoxFactoryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\BoxFactoryTest.cs" />
+    <Compile Include="Mpeg4\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\FileTest.cs" />
+    <Compile Include="Mpeg4\FileParserTest.ConstructorTest.g.cs">
+      <DependentUpon>FileParserTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\FileParserTest.cs" />
+    <Compile Include="Id3v2\ExtendedHeaderTest.CloneTest.g.cs">
+      <DependentUpon>ExtendedHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\ExtendedHeaderTest.ConstructorTest.g.cs">
+      <DependentUpon>ExtendedHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\ExtendedHeaderTest.cs" />
+    <Compile Include="Id3v2\ExtendedHeaderTest.SizeGetTest.g.cs">
+      <DependentUpon>ExtendedHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.CloneTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.ConstructorTest03.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.DescriptionGetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.DescriptionSetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.GetPreferredTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.GetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.LanguageGetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.LanguageSetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.TextEncodingGetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.TextEncodingSetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.TextGetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.TextSetTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\CommentsFrameTest.ToStringTest.g.cs">
+      <DependentUpon>CommentsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\GeneralEncapsulatedObjectFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>GeneralEncapsulatedObjectFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\GeneralEncapsulatedObjectFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>GeneralEncapsulatedObjectFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\GeneralEncapsulatedObjectFrameTest.cs" />
+    <Compile Include="Id3v2\FrameFactoryTest.AddFrameCreatorTest.g.cs">
+      <DependentUpon>FrameFactoryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\FrameFactoryTest.CreateFrameTest.g.cs">
+      <DependentUpon>FrameFactoryTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\FrameFactoryTest.cs" />
+    <Compile Include="Id3v2\Frames\GeneralEncapsulatedObjectFrameTest.GetTest.g.cs">
+      <DependentUpon>GeneralEncapsulatedObjectFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PlayCountFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>PlayCountFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PlayCountFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>PlayCountFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PlayCountFrameTest.GetTest.g.cs">
+      <DependentUpon>PlayCountFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PopularimeterFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>PopularimeterFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PopularimeterFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>PopularimeterFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PopularimeterFrameTest.GetTest.g.cs">
+      <DependentUpon>PopularimeterFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.CloneTest.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.GetTest.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.OwnerGetTest.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.PrivateDataGetTest.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.PrivateDataSetTest.g.cs">
+      <DependentUpon>PrivateFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\RelativeVolumeFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>RelativeVolumeFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\RelativeVolumeFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>RelativeVolumeFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\RelativeVolumeFrameTest.GetTest.g.cs">
+      <DependentUpon>RelativeVolumeFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TermsOfUseFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>TermsOfUseFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TermsOfUseFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>TermsOfUseFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TermsOfUseFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>TermsOfUseFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TermsOfUseFrameTest.GetPreferredTest.g.cs">
+      <DependentUpon>TermsOfUseFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TermsOfUseFrameTest.GetTest.g.cs">
+      <DependentUpon>TermsOfUseFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.CloneTest.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.GetTest.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.IdentifierGetTest.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.IdentifierSetTest.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.OwnerGetTest.g.cs">
+      <DependentUpon>UniqueFileIdentifierFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnknownFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>UnknownFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnknownFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>UnknownFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnknownFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>UnknownFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.CloneTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.ConstructorTest03.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.DescriptionGetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.DescriptionSetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.GetPreferredTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.GetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.LanguageGetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.LanguageSetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.TextEncodingGetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.TextEncodingSetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.TextGetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.TextSetTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.ToStringTest.g.cs">
+      <DependentUpon>UnsynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UrlLinkFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>UrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UrlLinkFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>UrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UrlLinkFrameTest.GetTest.g.cs">
+      <DependentUpon>UrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>UserTextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>UserTextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>UserTextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.GetTest.g.cs">
+      <DependentUpon>UserTextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.GetTest01.g.cs">
+      <DependentUpon>UserTextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.GetTest02.g.cs">
+      <DependentUpon>UserTextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserUrlLinkFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>UserUrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserUrlLinkFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>UserUrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserUrlLinkFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>UserUrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserUrlLinkFrameTest.GetTest.g.cs">
+      <DependentUpon>UserUrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\UserUrlLinkFrameTest.GetTest01.g.cs">
+      <DependentUpon>UserUrlLinkFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\SynchDataTest.FromUIntTest.g.cs">
+      <DependentUpon>SynchDataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\SynchDataTest.ResynchByteVectorTest.g.cs">
+      <DependentUpon>SynchDataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\SynchDataTest.ToUIntTest.g.cs">
+      <DependentUpon>SynchDataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\SynchDataTest.UnsynchByteVectorTest.g.cs">
+      <DependentUpon>SynchDataTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\AppleTagTest.ConstructorTest.g.cs">
+      <DependentUpon>AppleTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mpeg4\AppleTagTest.cs" />
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.CloneTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.cs" />
+    <Compile Include="Id3v1\TagTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.AlbumSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.CommentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.CommentSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ConstructorTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ConstructorTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.DefaultStringHandlerGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.DefaultStringHandlerSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.DataGetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.DataSetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.DescriptionGetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.DescriptionSetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.FilenameGetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.FilenameSetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.GetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.GetTest01.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.GetTest02.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.MimeTypeGetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.MimeTypeSetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.TextEncodingGetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.TextEncodingSetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.ToStringTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.TypeGetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.TypeSetTest.g.cs">
+      <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.CloneTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.DescriptionGetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.DescriptionSetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.FormatGetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.FormatSetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.GetPreferredTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.GetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.LanguageGetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.LanguageSetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.TextEncodingGetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.TextEncodingSetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.TextGetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.TextSetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.TypeGetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.TypeSetTest.g.cs">
+      <DependentUpon>SynchronisedLyricsFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TextInformationFrameTest.ConstructorTest.g.cs">
+      <DependentUpon>TextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TextInformationFrameTest.ConstructorTest01.g.cs">
+      <DependentUpon>TextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TextInformationFrameTest.ConstructorTest02.g.cs">
+      <DependentUpon>TextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TextInformationFrameTest.GetTest.g.cs">
+      <DependentUpon>TextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\TextInformationFrameTest.GetTest01.g.cs">
+      <DependentUpon>TextInformationFrameTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AddFrameTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumArtistsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumArtistsSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumArtistsSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AlbumSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AmazonIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.AmazonIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.BeatsPerMinuteGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.BeatsPerMinuteSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.CloneTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.CommentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.CommentSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ComposersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ComposersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ComposersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ComposersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ConductorGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ConductorSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ConstructorTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ConstructorTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.CopyToTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DateTaggedGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DateTaggedSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DefaultEncodingGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DefaultEncodingSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DefaultVersionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DefaultVersionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DescriptionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DescriptionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DiscCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DiscCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DiscGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.DiscSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.FlagsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.FlagsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ForceDefaultEncodingGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ForceDefaultEncodingSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ForceDefaultVersionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ForceDefaultVersionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GenresGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GenresSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GetEnumeratorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GetFramesTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GetFramesTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GetFramesTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GetFramesTest03.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GetTextAsStringTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GroupingGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.GroupingSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.IsCompilationGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.IsCompilationSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.LanguageGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.LanguageSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.LyricsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.LyricsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzDiscIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzDiscIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseCountryGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseCountrySetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseStatusGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseStatusSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseTypeGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzReleaseTypeSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzTrackIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicBrainzTrackIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicIpIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.MusicIpIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PerformersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PerformersRoleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PerformersRoleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PerformersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PerformersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PerformersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PicturesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.PicturesSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.RemoveFramesTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.RemoveFrameTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.RenderTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplaceFrameTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainAlbumGainGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainAlbumGainSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainAlbumPeakGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainAlbumPeakSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainTrackGainGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainTrackGainSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainTrackPeakGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.ReplayGainTrackPeakSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.SetNumberFrameTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.SetTextFrameTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.SubtitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.SubtitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TitleSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TitleSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TrackCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TrackCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TrackGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.TrackSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.UseNumericGenresGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.UseNumericGenresSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.VersionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.VersionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.YearGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\TagTest.YearSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\FileTest.cs" />
+    <Compile Include="Matroska\TagTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumArtistsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumArtistsSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumArtistsSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.AlbumSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.BeatsPerMinuteGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.BeatsPerMinuteSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.CommentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.CommentSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ComposersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ComposersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ComposersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ComposersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ConductorGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ConductorSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ConstructorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DateTaggedGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DateTaggedSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DescriptionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DescriptionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DiscCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DiscCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DiscGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.DiscSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.GenresGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.GenresSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.GetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.GroupingGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.GroupingSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.LyricsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.LyricsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MakeTargetTypeTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzDiscIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzDiscIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseCountryGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseCountrySetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseStatusGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseStatusSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseTypeGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzReleaseTypeSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzTrackIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicBrainzTrackIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicIpIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.MusicIpIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.ParentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PerformersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PerformersRoleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PerformersRoleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PerformersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PerformersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PerformersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PicturesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.PicturesSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.RemoveTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.SetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.SetTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.SetTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.SubtitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.SubtitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TargetTypeGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TargetTypeSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TargetTypeValueGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TitleSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TitleSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TrackCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TrackCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TrackGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.TrackSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.YearGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matroska\TagTest.YearSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v2\Frames\RelativeVolumeFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\PopularimeterFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\PrivateFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\PlayCountFrameTest.cs" />
+    <Compile Include="Ogg\GroupedCommentTest.DateTaggedGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DateTaggedSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DescriptionGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DescriptionSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DiscCountGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DiscCountSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DiscGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.DiscSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.GenresGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.GenresSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.GetCommentTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.GroupingGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.GroupingSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.LyricsGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.LyricsSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzArtistIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzArtistIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzDiscIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzDiscIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseArtistIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseArtistIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseCountryGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseCountrySetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseStatusGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseStatusSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseTypeGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzReleaseTypeSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzTrackIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicBrainzTrackIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicIpIdGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.MusicIpIdSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PerformersGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PerformersRoleGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PerformersRoleSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PerformersSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PerformersSortGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PerformersSortSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PicturesGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.PicturesSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainAlbumGainGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainAlbumGainSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainAlbumPeakGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainAlbumPeakSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainTrackGainGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainTrackGainSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainTrackPeakGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.ReplayGainTrackPeakSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.SubtitleGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.SubtitleSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TagTypesGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TitleGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TitleSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TitleSortGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TitleSortSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TrackCountGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TrackCountSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TrackGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.TrackSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.YearGetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\GroupedCommentTest.YearSetTest.g.cs">
+      <DependentUpon>GroupedCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\PageTest.ConstructorTest.g.cs">
+      <DependentUpon>PageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\PageTest.ConstructorTest01.g.cs">
+      <DependentUpon>PageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\PageTest.cs" />
+    <Compile Include="Ogg\PageTest.OverwriteSequenceNumbersTest.g.cs">
+      <DependentUpon>PageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\PaginatorTest.ConstructorTest.g.cs">
+      <DependentUpon>PaginatorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\PaginatorTest.cs" />
+    <Compile Include="Ogg\XiphCommentTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumArtistsSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumArtistsSortGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumArtistsSortSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumSortGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AlbumSortSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AmazonIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.AmazonIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.BeatsPerMinuteGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.BeatsPerMinuteSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ClearTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.CommentGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.CommentSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ComposersGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ComposersSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ComposersSortGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ComposersSortSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ConductorGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ConductorSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ConstructorTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ConstructorTest01.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.CopyrightGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.CopyrightSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DateTaggedGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DateTaggedSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DescriptionGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DescriptionSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DiscCountGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DiscCountSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DiscGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.DiscSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.FieldCountGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GenresGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GenresSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GetEnumeratorTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GetFieldTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GetFirstFieldTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GroupingGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.GroupingSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.IsCompilationGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.IsCompilationSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.LyricsGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.LyricsSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzArtistIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzArtistIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzDiscIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzDiscIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseArtistIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseArtistIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseCountryGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseCountrySetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseStatusGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseStatusSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseTypeGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzReleaseTypeSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzTrackIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicBrainzTrackIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicIpIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.MusicIpIdSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PerformersGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PerformersRoleGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PerformersRoleSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PerformersSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PerformersSortGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PerformersSortSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PicturesGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.PicturesSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.RemoveFieldTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.RenderTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainAlbumGainGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainAlbumGainSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainAlbumPeakGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainAlbumPeakSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainTrackGainGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainTrackGainSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainTrackPeakGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.ReplayGainTrackPeakSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.SetFieldTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.SetFieldTest01.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.SubtitleGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.SubtitleSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TagTypesGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TitleGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TitleSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TitleSortGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TitleSortSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TrackCountGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TrackCountSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TrackGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.TrackSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.VendorIdGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.YearGetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\XiphCommentTest.YearSetTest.g.cs">
+      <DependentUpon>XiphCommentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogg\Codecs\OpusTest.cs" />
+    <Compile Include="Asf\PaddingObjectTest.cs" />
+    <Compile Include="IDF\Entries\RationalArrayIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\RationalIFDEntryTest.cs" />
+    <Compile Include="Flac\PictureTest.cs" />
+    <Compile Include="Png\PngTagTest.ClearTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.CommentGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.CommentSetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.ConstructorTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.CreatorGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.CreatorSetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.cs" />
+    <Compile Include="Png\PngTagTest.DateTimeGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.DateTimeSetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.GetEnumeratorTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.GetKeywordTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.SetKeywordTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.SoftwareGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.SoftwareSetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.TitleGetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Png\PngTagTest.TitleSetTest.g.cs">
+      <DependentUpon>PngTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\AviAudioStreamTest.ConstructorTest.g.cs">
+      <DependentUpon>AviAudioStreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\AviAudioStreamTest.cs" />
+    <Compile Include="Riff\AviAudioStreamTest.ParseItemTest.g.cs">
+      <DependentUpon>AviAudioStreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\AviVideoStreamTest.ConstructorTest.g.cs">
+      <DependentUpon>AviVideoStreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\AviVideoStreamTest.cs" />
+    <Compile Include="Riff\AviVideoStreamTest.ParseItemTest.g.cs">
+      <DependentUpon>AviVideoStreamTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.ClearTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.CommentGetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.CommentSetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.ConstructorTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.ConstructorTest02.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.cs" />
+    <Compile Include="Riff\DivXTagTest.GenresGetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.GenresSetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.PerformersSetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.TitleGetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.TitleSetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.YearGetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.YearSetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\FileTest.cs" />
+    <Compile Include="Riff\AviHeaderListTest.ConstructorTest.g.cs">
+      <DependentUpon>AviHeaderListTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\AviHeaderListTest.cs" />
+    <Compile Include="other\ByteVectorCollectionTest.ConstructorTest.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ByteVectorCollectionTest.ConstructorTest01.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ByteVectorCollectionTest.cs" />
+    <Compile Include="other\ByteVectorCollectionTest.SortedInsertTest.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ByteVectorCollectionTest.SplitTest.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ByteVectorCollectionTest.SplitTest01.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ByteVectorCollectionTest.SplitTest02.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ByteVectorCollectionTest.ToByteVectorTest.g.cs">
+      <DependentUpon>ByteVectorCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\CombinedTagTest.cs" />
+    <Compile Include="other\CorruptFileExceptionTest.ConstructorTest.g.cs">
+      <DependentUpon>CorruptFileExceptionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\CorruptFileExceptionTest.ConstructorTest01.g.cs">
+      <DependentUpon>CorruptFileExceptionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\CorruptFileExceptionTest.cs" />
+    <Compile Include="Riff\InfoTagTest.ConstructorTest.g.cs">
+      <DependentUpon>InfoTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\InfoTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>InfoTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\InfoTagTest.cs" />
+    <Compile Include="Riff\ListTest.ConstructorTest.g.cs">
+      <DependentUpon>ListTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\ListTest.ConstructorTest01.g.cs">
+      <DependentUpon>ListTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\ListTest.cs" />
+    <Compile Include="Riff\MovieIdTagTest.ConstructorTest.g.cs">
+      <DependentUpon>MovieIdTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\MovieIdTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>MovieIdTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\MovieIdTagTest.cs" />
+    <Compile Include="Id3v2\Frames\TextInformationFrameTest.cs" />
+    <Compile Include="Id3v2\TagTest.cs" />
+    <Compile Include="Id3v1\TagTest.cs" />
+    <Compile Include="Id3v2\Frames\SynchronisedLyricsFrameTest.cs" />
+    <Compile Include="Matroska\TagTest.cs" />
+    <Compile Include="Id3v2\Frames\UrlLinkFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\UnsynchronisedLyricsFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\TermsOfUseFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\UserUrlLinkFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\UserTextInformationFrameTest.cs" />
+    <Compile Include="Id3v2\SynchDataTest.cs" />
+    <Compile Include="Id3v2\Frames\UniqueFileIdentifierFrameTest.cs" />
+    <Compile Include="Id3v2\Frames\UnknownFrameTest.cs" />
+    <Compile Include="Mpeg4\Boxes\TextBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\UnknownBoxTest.cs" />
+    <Compile Include="Mpeg4\Boxes\UrlBoxTest.cs" />
+    <Compile Include="Ogg\Codecs\TheoraTest.cs" />
+    <Compile Include="Ogg\Codecs\VorbisTest.cs" />
+    <Compile Include="Matroska\SimpleTagTest.cs" />
+    <Compile Include="Matroska\SubtitleTrackTest.cs" />
+    <Compile Include="Matroska\TagsTest.cs" />
+    <Compile Include="Matroska\TrackTest.cs" />
+    <Compile Include="Matroska\UIDElementTest.cs" />
+    <Compile Include="Matroska\VideoTrackTest.cs" />
+    <Compile Include="Asf\StreamPropertiesObjectTest.cs" />
+    <Compile Include="Asf\UnknownObjectTest.cs" />
+    <Compile Include="Asf\TagTest.cs" />
+    <Compile Include="IDF\Entries\SByteIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\ShortArrayIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\ShortIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SLongArrayIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SLongIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SRationalArrayIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SRationalIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SShortArrayIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SShortIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\StringIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\StripOffsetsIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\SubIFDArrayEntryTest.cs" />
+    <Compile Include="IDF\Entries\SubIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\ThumbnailDataIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\UndefinedIFDEntryTest.cs" />
+    <Compile Include="IDF\Entries\UserCommentIFDEntryTest.cs" />
+    <Compile Include="Ape\TagTest.cs" />
+    <Compile Include="Audible\TagTest.cs" />
+    <Compile Include="Id3v1\StringHandlerTest.cs" />
+    <Compile Include="NonContainer\StartTagTest.cs" />
+    <Compile Include="NonContainer\TagTest.cs" />
+    <Compile Include="WavPack\FileTest.ConstructorTest.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WavPack\FileTest.ConstructorTest01.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WavPack\FileTest.ConstructorTest02.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WavPack\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WavPack\FileTest.cs" />
+    <Compile Include="other\FileTypesTest.AvailableTypesGetTest.g.cs">
+      <DependentUpon>FileTypesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\FileTypesTest.cs" />
+    <Compile Include="other\FileTypesTest.RegisterTest.g.cs">
+      <DependentUpon>FileTypesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.AudioGetTest.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.AudioToIndexTest.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.cs" />
+    <Compile Include="other\GenresTest.IndexToAudioTest.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.IndexToAudioTest01.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.IndexToVideoTest.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.IndexToVideoTest01.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.VideoGetTest.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\GenresTest.VideoToIndexTest.g.cs">
+      <DependentUpon>GenresTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ListBaseTTest.cs" />
+    <Compile Include="other\PictureTest.ConstructorTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.ConstructorTest01.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.ConstructorTest02.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.ConstructorTest03.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.cs" />
+    <Compile Include="other\PictureTest.DataGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.DataSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.DescriptionGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.DescriptionSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.FilenameGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.FilenameSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.MimeTypeGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.MimeTypeSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.TypeGetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PictureTest.TypeSetTest.g.cs">
+      <DependentUpon>PictureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.AudioBitrateGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.AudioChannelsGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.AudioSampleRateGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.BitsPerSampleGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.CodecsGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.ConstructorTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.ConstructorTest01.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.ConstructorTest02.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.cs" />
+    <Compile Include="other\PropertiesTest.DescriptionGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.DurationGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.MediaTypesGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.PhotoHeightGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.PhotoQualityGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.PhotoWidthGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.VideoHeightGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\PropertiesTest.VideoWidthGetTest.g.cs">
+      <DependentUpon>PropertiesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\PexAssemblyInfo.cs" />
+    <Compile Include="other\ReadOnlyByteVectorTest.ConstructorTest.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.ConstructorTest01.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.ConstructorTest02.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.ConstructorTest03.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.ConstructorTest04.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.cs" />
+    <Compile Include="other\ReadOnlyByteVectorTest.IsFixedSizeGetTest.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.IsReadOnlyGetTest.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.op_ImplicitTest.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.op_ImplicitTest01.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\ReadOnlyByteVectorTest.op_ImplicitTest02.g.cs">
+      <DependentUpon>ReadOnlyByteVectorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\StringCollectionTest.ConstructorTest.g.cs">
+      <DependentUpon>StringCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\StringCollectionTest.ConstructorTest01.g.cs">
+      <DependentUpon>StringCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\StringCollectionTest.ConstructorTest02.g.cs">
+      <DependentUpon>StringCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\StringCollectionTest.ConstructorTest03.g.cs">
+      <DependentUpon>StringCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\StringCollectionTest.cs" />
+    <Compile Include="other\StringCollectionTest.SplitTest.g.cs">
+      <DependentUpon>StringCollectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\SupportedMimeTypeTest.AllExtensionsGetTest.g.cs">
+      <DependentUpon>SupportedMimeTypeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\SupportedMimeTypeTest.AllMimeTypesGetTest.g.cs">
+      <DependentUpon>SupportedMimeTypeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\SupportedMimeTypeTest.ConstructorTest.g.cs">
+      <DependentUpon>SupportedMimeTypeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\SupportedMimeTypeTest.ConstructorTest01.g.cs">
+      <DependentUpon>SupportedMimeTypeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\SupportedMimeTypeTest.cs" />
+    <Compile Include="other\SupportedMimeTypeTest.ExtensionGetTest.g.cs">
+      <DependentUpon>SupportedMimeTypeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\SupportedMimeTypeTest.MimeTypeGetTest.g.cs">
+      <DependentUpon>SupportedMimeTypeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\UnsupportedFormatExceptionTest.ConstructorTest.g.cs">
+      <DependentUpon>UnsupportedFormatExceptionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\UnsupportedFormatExceptionTest.ConstructorTest01.g.cs">
+      <DependentUpon>UnsupportedFormatExceptionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other\UnsupportedFormatExceptionTest.cs" />
+    <Compile Include="Ogg\XiphCommentTest.cs" />
+    <Compile Include="Xmp\XmpTagTest.AltitudeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.AltitudeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.ClearTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.CommentGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.CommentSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.ConstructorTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.ConstructorTest01.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.CreatorGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.CreatorSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.cs" />
+    <Compile Include="Xmp\XmpNodeTest.ConstructorTest.g.cs">
+      <DependentUpon>XmpNodeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpNodeTest.ConstructorTest01.g.cs">
+      <DependentUpon>XmpNodeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpNodeTest.cs" />
+    <Compile Include="Xmp\XmpTagTest.DateTimeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.DateTimeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.ExposureTimeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xmp\XmpTagTest.ExposureTimeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

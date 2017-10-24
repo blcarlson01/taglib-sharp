@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taglib-sharp", "src\taglib-sharp.csproj", "{6B143A39-C7B2-4743-9917-92262C60E9A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{4D1C6110-D6F2-496E-BD7E-E45B7217D458}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "debug", "debug\debug.csproj", "{AD739881-60F3-4165-9C4E-3B5CD95469F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taglib-sharp.Tests", "taglib-sharp.Tests\taglib-sharp.Tests.csproj", "{C2F98931-9246-46A4-BECA-76BA8C30E11E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +29,16 @@ Global
 		{AD739881-60F3-4165-9C4E-3B5CD95469F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD739881-60F3-4165-9C4E-3B5CD95469F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD739881-60F3-4165-9C4E-3B5CD95469F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F98931-9246-46A4-BECA-76BA8C30E11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F98931-9246-46A4-BECA-76BA8C30E11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F98931-9246-46A4-BECA-76BA8C30E11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F98931-9246-46A4-BECA-76BA8C30E11E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C9C3D0B-43B6-4997-B6FB-A8C691D65C00}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = tests\tests.csproj
