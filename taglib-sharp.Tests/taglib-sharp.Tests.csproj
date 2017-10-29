@@ -42,6 +42,9 @@
     <Reference Include="Microsoft.Pex.Framework, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -52,10 +55,40 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aac\AudioHeaderTest.AudioBitrateGetTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.AudioChannelsGetTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.AudioSampleRateGetTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.DescriptionGetTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.DurationGetTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aac\AudioHeaderTest.FindTest.g.cs">
       <DependentUpon>AudioHeaderTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Aac\AudioHeaderTest.FindTest01.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.FindTest_Buffer.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.FindTest_NoFile.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.FindTest_NotFound.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.MediaTypesGetTest.g.cs">
+      <DependentUpon>AudioHeaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\AudioHeaderTest.SetStreamLengthTest.g.cs">
       <DependentUpon>AudioHeaderTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Aac\BitStreamTest.ConstructorTest.g.cs">
@@ -74,6 +107,9 @@
       <DependentUpon>FileTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Aac\FileTest.ConstructorTest03.g.cs">
+      <DependentUpon>FileTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aac\FileTest.GetTagTest.g.cs">
       <DependentUpon>FileTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Aiff\FileTest.ConstructorTest.g.cs">
@@ -149,6 +185,15 @@
     <Compile Include="Ape\ItemTest.ValueGetTest.g.cs">
       <DependentUpon>ItemTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ape\TagTest.AddNoValueClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AddValueTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ape\TagTest.ConstructorTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
@@ -162,6 +207,9 @@
     <Compile Include="Aac\BitStreamTest.cs" />
     <Compile Include="Aac\FileTest.cs" />
     <Compile Include="Aiff\FileTest.cs" />
+    <Compile Include="Ape\TagTest.FullTagAndClear.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Audible\FileTest.ConstructorTest.g.cs">
       <DependentUpon>FileTest.cs</DependentUpon>
     </Compile>
@@ -205,18 +253,29 @@
     <Compile Include="Audible\TagTest.NarratorGetTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Audible\TagTest.SetTagClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Audible\TagTest.TagTypesGetTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Audible\TagTest.TitleGetTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Factories\AudioHeaderFactory.cs" />
+    <Compile Include="Factories\ByteVectorFactory.cs" />
+    <Compile Include="Factories\FileFactory.cs" />
+    <Compile Include="Factories\ApeFileFactory.cs" />
+    <Compile Include="Factories\TagFactory.cs" />
+    <Compile Include="FileTest.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="IIM\IIMReaderTest.ConstructorTest.g.cs">
       <DependentUpon>IIMReaderTest.cs</DependentUpon>
     </Compile>
     <Compile Include="IIM\IIMReaderTest.ProcessTest.g.cs">
       <DependentUpon>IIMReaderTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="StandardTests.cs" />
     <Compile Include="Tiff\CodecTest.ConstructorTest.g.cs">
       <DependentUpon>CodecTest.cs</DependentUpon>
     </Compile>
@@ -3723,7 +3782,170 @@
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="samples\apple_tags.m4a" />
+    <Content Include="samples\bgo_658920.m4a" />
+    <Content Include="samples\bgo_676934.m4a" />
+    <Content Include="samples\bgo_701689.m4a" />
+    <Content Include="samples\remove_tags.mp3" />
+    <None Include="packages.config" />
+    <None Include="samples\sample.aac">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="samples\sample.aif" />
+    <Content Include="samples\sample.avi" />
+    <Content Include="samples\sample.jpg" />
+    <Content Include="samples\sample.m4a" />
+    <Content Include="samples\sample.m4v" />
+    <Content Include="samples\sample.wma" />
+    <Content Include="samples\sample_badifdentrytype.jpg" />
+    <Content Include="samples\sample_bgo493530.jpg" />
+    <Content Include="samples\sample_bgo624097.jpg" />
+    <Content Include="samples\sample_bgo625367.jpg" />
+    <Content Include="samples\sample_bgo631333.jpg" />
+    <Content Include="samples\sample_both.mp3" />
+    <Content Include="samples\sample_canon_bibble5.jpg" />
+    <Content Include="samples\sample_canon_bibble5_16bit.tiff" />
+    <Content Include="samples\sample_canon_bibble5_8bit.tiff" />
+    <Content Include="samples\sample_canon_dpp_16bit.tiff" />
+    <Content Include="samples\sample_canon_dpp_8bit.tiff" />
+    <Content Include="samples\sample_canon_zoombrowser.jpg" />
+    <Content Include="samples\sample_emptycomment.jpg" />
+    <Content Include="samples\sample_exiftool.gif" />
+    <Content Include="samples\sample_exiftool_long_comment.gif" />
+    <Content Include="samples\sample_exiftool_tangled1.gif" />
+    <Content Include="samples\sample_exiftool_tangled2.gif" />
+    <Content Include="samples\sample_exiftool_tangled3.gif" />
+    <Content Include="samples\sample_gimp.gif" />
+    <Content Include="samples\sample_gimp.png" />
+    <Content Include="samples\sample_gimp.tiff" />
+    <Content Include="samples\sample_gimp_exiftool.jpg" />
+    <Content Include="samples\sample_gimp_lzw.tiff" />
+    <Content Include="samples\sample_gimp_pngcrush.png" />
+    <Content Include="samples\sample_invalidifdoffset.jpg" />
+    <Content Include="samples\sample_iptc1.jpg" />
+    <Content Include="samples\sample_iptc2.jpg" />
+    <Content Include="samples\sample_iptc3.jpg" />
+    <Content Include="samples\sample_nikon1.jpg" />
+    <Content Include="samples\sample_nikon1_bibble5.jpg" />
+    <Content Include="samples\sample_nikon1_bibble5_16bit.tiff" />
+    <Content Include="samples\sample_nikon1_bibble5_8bit.tiff" />
+    <Content Include="samples\sample_nikon1_viewnx_16bit.tiff" />
+    <Content Include="samples\sample_nikon1_viewnx_8bit.tiff" />
+    <Content Include="samples\sample_nikon2.jpg" />
+    <Content Include="samples\sample_nikon2_bibble5.jpg" />
+    <Content Include="samples\sample_nikon2_bibble5_16bit.tiff" />
+    <Content Include="samples\sample_nikon2_bibble5_8bit.tiff" />
+    <Content Include="samples\sample_nikon2_viewnx_16bit.tiff" />
+    <Content Include="samples\sample_nikon2_viewnx_8bit.tiff" />
+    <Content Include="samples\sample_nikon3.jpg" />
+    <Content Include="samples\sample_nikon4.jpg" />
+    <Content Include="samples\sample_no_metadata.jpg" />
+    <Content Include="samples\sample_null_orientation.jpg" />
+    <Content Include="samples\sample_olympus1.jpg" />
+    <Content Include="samples\sample_olympus2.jpg" />
+    <Content Include="samples\sample_olympus3.jpg" />
+    <Content Include="samples\sample_olympus_corrupt_mn.jpg" />
+    <Content Include="samples\sample_panasonic.jpg" />
+    <Content Include="samples\sample_recursive_ifd.jpg" />
+    <Content Include="samples\sample_replaygain.mp3" />
+    <Content Include="samples\sample_sony1.jpg" />
+    <Content Include="samples\sample_sony2.jpg" />
+    <Content Include="samples\sample_sony_DSC-RX100M4.jpg" />
+    <Content Include="samples\sample_tangled1.jpg" />
+    <Content Include="samples\sample_tangled2.jpg" />
+    <Content Include="samples\sample_tangled3.jpg" />
+    <Content Include="samples\sample_tangled4.jpg" />
+    <Content Include="samples\sample_tangled5.jpg" />
+    <Content Include="samples\sample_tangled6.jpg" />
+    <Content Include="samples\sample_unicode5.jpg" />
+    <Content Include="samples\sample_v1_only.mp3" />
+    <Content Include="samples\sample_v2_3_ext_header.mp3" />
+    <Content Include="samples\sample_v2_4_unsynch.mp3" />
+    <Content Include="samples\sample_v2_only.mp3" />
+    <Content Include="samples\sample_xap.jpg" />
+    <Content Include="samples\sample_xmpcrash.jpg" />
+    <Content Include="samples\sample_xmpnullended.jpg" />
+    <Content Include="samples\tmpwrite.aac" />
+    <Content Include="samples\tmpwrite.aif" />
+    <Content Include="samples\tmpwrite.avi" />
+    <Content Include="samples\tmpwrite.m4a" />
+    <Content Include="samples\tmpwrite.m4v" />
+    <Content Include="samples\tmpwrite.wma" />
+    <Content Include="samples\tmpwrite_both.mp3" />
+    <Content Include="samples\tmpwrite_exceed_segment_size.jpg" />
+    <Content Include="samples\tmpwrite_nikon2.jpg" />
+    <Content Include="samples\tmpwrite_nikon3.jpg" />
+    <Content Include="samples\tmpwrite_nikon4.jpg" />
+    <Content Include="samples\tmpwrite_olympus1.jpg" />
+    <Content Include="samples\tmpwrite_olympus2.jpg" />
+    <Content Include="samples\tmpwrite_olympus3.jpg" />
+    <Content Include="samples\tmpwrite_sample_bgo631333.jpg" />
+    <Content Include="samples\tmpwrite_sample_canon_bibble5.jpg" />
+    <Content Include="samples\tmpwrite_sample_canon_bibble5_16bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_canon_bibble5_8bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_canon_dpp_16bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_canon_dpp_8bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_canon_zoombrowser.jpg" />
+    <Content Include="samples\tmpwrite_sample_emptycomment.jpg" />
+    <Content Include="samples\tmpwrite_sample_exiftool.gif" />
+    <Content Include="samples\tmpwrite_sample_exiftool_long_comment.gif" />
+    <Content Include="samples\tmpwrite_sample_exiftool_tangled1.gif" />
+    <Content Include="samples\tmpwrite_sample_exiftool_tangled2.gif" />
+    <Content Include="samples\tmpwrite_sample_exiftool_tangled3.gif" />
+    <Content Include="samples\tmpwrite_sample_gimp.gif" />
+    <Content Include="samples\tmpwrite_sample_gimp.png" />
+    <Content Include="samples\tmpwrite_sample_gimp.tiff" />
+    <Content Include="samples\tmpwrite_sample_gimp_exiftool.jpg" />
+    <Content Include="samples\tmpwrite_sample_gimp_lzw.tiff" />
+    <Content Include="samples\tmpwrite_sample_gimp_pngcrush.png" />
+    <Content Include="samples\tmpwrite_sample_nikon1.jpg" />
+    <Content Include="samples\tmpwrite_sample_nikon1_bibble5.jpg" />
+    <Content Include="samples\tmpwrite_sample_nikon1_bibble5_16bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon1_bibble5_8bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon1_viewnx_16bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon1_viewnx_8bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon2_bibble5.jpg" />
+    <Content Include="samples\tmpwrite_sample_nikon2_bibble5_16bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon2_bibble5_8bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon2_viewnx_16bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_nikon2_viewnx_8bit.tiff" />
+    <Content Include="samples\tmpwrite_sample_no_metadata.jpg" />
+    <Content Include="samples\tmpwrite_sample_null_orientation.jpg" />
+    <Content Include="samples\tmpwrite_sample_panasonic.jpg" />
+    <Content Include="samples\tmpwrite_sample_xap.jpg" />
+    <Content Include="samples\tmpwrite_sony1.jpg" />
+    <Content Include="samples\tmpwrite_sony2.jpg" />
+    <Content Include="samples\tmpwrite_tangled1.jpg" />
+    <Content Include="samples\tmpwrite_tangled2.jpg" />
+    <Content Include="samples\tmpwrite_tangled3.jpg" />
+    <Content Include="samples\tmpwrite_tangled4.jpg" />
+    <Content Include="samples\tmpwrite_tangled5.jpg" />
+    <Content Include="samples\tmpwrite_tangled6.jpg" />
+    <Content Include="samples\tmpwrite_v1_only.mp3" />
+    <Content Include="samples\tmpwrite_v2_4_unsynch.mp3" />
+    <Content Include="samples\tmpwrite_v2_only.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="samples\LICENSE" />
+    <None Include="samples\sample.ape" />
+    <None Include="samples\sample.dsf" />
+    <None Include="samples\sample.flac" />
+    <None Include="samples\sample.mpc" />
+    <None Include="samples\sample.ogg" />
+    <None Include="samples\sample.opus" />
+    <None Include="samples\sample_replaygain.flac" />
+    <None Include="samples\sample_v8.mpc" />
+    <None Include="samples\tmpwrite.dsf" />
+    <None Include="samples\tmpwrite.flac" />
+    <None Include="samples\tmpwrite.mkv" />
+    <None Include="samples\tmpwrite.mpc" />
+    <None Include="samples\tmpwrite.ogg" />
+    <None Include="samples\tmpwrite.opus" />
+    <None Include="samples\tmpwrite_v8.mpc" />
+    <None Include="samples\Turning Lime.mkv" />
+    <None Include="samples\vector.bin" />
+  </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
       <ItemGroup>
