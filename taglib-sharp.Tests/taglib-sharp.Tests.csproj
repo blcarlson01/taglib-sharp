@@ -210,6 +210,9 @@
     <Compile Include="Ape\TagTest.FullTagAndClear.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Asf\TagTest.FullTagClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Audible\FileTest.ConstructorTest.g.cs">
       <DependentUpon>FileTest.cs</DependentUpon>
     </Compile>
@@ -264,9 +267,13 @@
     </Compile>
     <Compile Include="Factories\AudioHeaderFactory.cs" />
     <Compile Include="Factories\ByteVectorFactory.cs" />
+    <Compile Include="Factories\DivXTagFactory.cs" />
     <Compile Include="Factories\FileFactory.cs" />
     <Compile Include="Factories\ApeFileFactory.cs" />
+    <Compile Include="Factories\AsfFileFactory.cs" />
+    <Compile Include="Factories\AsfHeaderObjectFactory.cs" />
     <Compile Include="Factories\TagFactory.cs" />
+    <Compile Include="Factories\AsfTagFactory.cs" />
     <Compile Include="FileTest.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="IIM\IIMReaderTest.ConstructorTest.g.cs">
@@ -274,6 +281,9 @@
     </Compile>
     <Compile Include="IIM\IIMReaderTest.ProcessTest.g.cs">
       <DependentUpon>IIMReaderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.FullTagClearTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="StandardTests.cs" />
     <Compile Include="Tiff\CodecTest.ConstructorTest.g.cs">
