@@ -55,11 +55,68 @@
     <Compile Include="Factories\XmpTagFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\PexAssemblyInfo.cs" />
+    <Compile Include="XmpTagTest.AltitudeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.AltitudeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.ClearTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.CommentGetDescriptionTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmpTagTest.CommentGetUserCommentTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="XmpTagTest.CommentSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.CreatorGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.CreatorSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmpTagTest.cs" />
+    <Compile Include="XmpTagTest.DateTimeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.DateTimeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.ExposureTimeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.ExposureTimeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmpTagTest.FindNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.FNumberGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.FNumberSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.FocalLengthGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.FocalLengthIn35mmFilmGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.FocalLengthIn35mmFilmSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.FocalLengthSetTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="XmpTagTest.GetCollectionNodeTest.g.cs">
@@ -68,10 +125,49 @@
     <Compile Include="XmpTagTest.GetLangAltNodeTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="XmpTagTest.GetRationalNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.GetTextNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmpTagTest.GetUIntNodeTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="XmpTagTest.ISOSpeedRatingsGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.ISOSpeedRatingsSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmpTagTest.KeywordsGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.KeywordsSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.LatitudeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.LatitudeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.LongitudeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.LongitudeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.MakeGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.MakeSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.ModelGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.ModelSetTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="XmpTagTest.OrientationGetTest.g.cs">
@@ -80,10 +176,40 @@
     <Compile Include="XmpTagTest.OrientationSetTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="XmpTagTest.RatingGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.RatingSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmpTagTest.ReplaceFromTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="XmpTagTest.SetCollectionNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.SetLangAltNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.SetRationalNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.SetTextNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.SoftwareGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.SoftwareSetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.TitleGetTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmpTagTest.TitleSetTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
   </ItemGroup>
