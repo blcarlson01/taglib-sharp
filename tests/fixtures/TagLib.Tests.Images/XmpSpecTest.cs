@@ -73,7 +73,7 @@ namespace TagLib.Tests.Images
 		}
 
 		[Test]
-		public void StructuredTypeShorthandTest ()
+		public void StructuredTyrepeShorthandTest ()
 		{
 			string metadata =
 				@"<x:xmpmeta xmlns:x=""adobe:ns:meta/"">

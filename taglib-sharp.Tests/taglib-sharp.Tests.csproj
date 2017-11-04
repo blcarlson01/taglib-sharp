@@ -191,7 +191,73 @@
     <Compile Include="Ape\TagTest.AddValueTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ape\TagTest.AddValueTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AddValueTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumArtistsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumArtistsSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumArtistsSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AlbumSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AmazonIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.AmazonIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.BeatsPerMinuteGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.BeatsPerMinuteSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ape\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.CommentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.CommentSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ComposersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ComposersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ComposersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ComposersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ConductorGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ConductorSetTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Ape\TagTest.ConstructorTest.g.cs">
@@ -207,10 +273,511 @@
     <Compile Include="Aac\BitStreamTest.cs" />
     <Compile Include="Aac\FileTest.cs" />
     <Compile Include="Aiff\FileTest.cs" />
+    <Compile Include="Ape\TagTest.ConstuctorFooterSize.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.CopyToTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DateTaggedGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DateTaggedSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DescriptionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DescriptionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DiscCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DiscCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DiscGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.DiscSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ape\TagTest.FullTagAndClear.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ape\TagTest.GenresGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.GenresSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.GetEnumeratorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.GetItemTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.GroupingGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.GroupingSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.HasItemTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.HeaderPresentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.HeaderPresentSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.LyricsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.LyricsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzDiscIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzDiscIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseCountryGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseCountrySetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseStatusGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseStatusSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseTypeGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzReleaseTypeSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzTrackIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicBrainzTrackIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicIpIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.MusicIpIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PerformersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PerformersRoleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PerformersRoleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PerformersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PerformersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PerformersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PicturesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.PicturesSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.RemoveItemTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.RenderTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainAlbumGainGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainAlbumGainSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainAlbumPeakGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainAlbumPeakSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainTrackGainGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainTrackGainSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainTrackPeakGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.ReplayGainTrackPeakSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.SetItemTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.SetValueTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.SetValueTest01.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.SetValueTest02.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.SubtitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.SubtitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TagWithFileTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TitleSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TitleSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TrackCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TrackCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TrackGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.TrackSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.YearGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ape\TagTest.YearSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AddDescriptorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumArtistsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumArtistsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumArtistsSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumArtistsSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.AlbumSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.BeatsPerMinuteGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.BeatsPerMinuteSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.CommentGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.CommentSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ComposersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ComposersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ConductorGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ConductorSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ContentDescriptionObjectGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.CopyrightGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.CopyrightSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.DescriptionGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.DescriptionSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.DiscCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.DiscCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.DiscGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.DiscSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ExtendedContentDescriptionObjectGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asf\TagTest.FullTagClearTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GenresGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GenresSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GetDescriptorsTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GetDescriptorStringsTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GetDescriptorStringTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GetEnumeratorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GroupingGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.GroupingSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.IsEmptyGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.LyricsGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.LyricsSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MetadataLibraryObjectGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzDiscIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzDiscIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseArtistIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseArtistIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseCountryGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseCountrySetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseStatusGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseStatusSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseTypeGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzReleaseTypeSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzTrackIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicBrainzTrackIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicIpIdGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.MusicIpIdSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.PerformersGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.PerformersSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.PerformersSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.PerformersSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.PicturesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.PicturesSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.RemoveDescriptorsTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainAlbumGainGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainAlbumGainSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainAlbumPeakGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainAlbumPeakSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainTrackGainGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainTrackGainSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainTrackPeakGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.ReplayGainTrackPeakSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.SetDescriptorsTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.SetDescriptorStringsTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.SetDescriptorStringTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.SubtitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.SubtitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TagTypesGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TitleGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TitleSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TitleSortGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TitleSortSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TrackCountGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TrackCountSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TrackGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.TrackSetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.YearGetTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asf\TagTest.YearSetTest.g.cs">
       <DependentUpon>TagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Audible\FileTest.ConstructorTest.g.cs">
@@ -272,18 +839,55 @@
     <Compile Include="Factories\ApeFileFactory.cs" />
     <Compile Include="Factories\AsfFileFactory.cs" />
     <Compile Include="Factories\AsfHeaderObjectFactory.cs" />
-    <Compile Include="Factories\TagFactory.cs" />
+    <Compile Include="Factories\InfoTagFactory.cs" />
+    <Compile Include="Factories\ObjectEqualityComparerFactory.cs" />
+    <Compile Include="Factories\RiffFileFactory.cs" />
+    <Compile Include="Factories\ApeTagFactory.cs" />
     <Compile Include="Factories\AsfTagFactory.cs" />
+    <Compile Include="Factories\ID3v1TagFactory.cs" />
     <Compile Include="FileTest.cs" />
     <Compile Include="Helpers.cs" />
+    <Compile Include="Id3v1\TagTest.ConstructorByteVectorTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ConstructorData.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ConstructorDataTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.ConstructorNullData.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id3v1\TagTest.FullTagTest.g.cs">
+      <DependentUpon>TagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="IIM\IIMReaderTest.ConstructorTest.g.cs">
       <DependentUpon>IIMReaderTest.cs</DependentUpon>
     </Compile>
     <Compile Include="IIM\IIMReaderTest.ProcessTest.g.cs">
       <DependentUpon>IIMReaderTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Riff\DivXTagTest.ConstructorNotNullData.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.ConstructorNullData.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.ConstructorNullFile.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Riff\DivXTagTest.FullTagClearTest.g.cs">
       <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.PerformersGetTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\DivXTagTest.RenderTest.g.cs">
+      <DependentUpon>DivXTagTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riff\InfoTagTest.FullTagTest.g.cs">
+      <DependentUpon>InfoTagTest.cs</DependentUpon>
     </Compile>
     <Compile Include="StandardTests.cs" />
     <Compile Include="Tiff\CodecTest.ConstructorTest.g.cs">
@@ -2009,36 +2613,6 @@
       <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.cs" />
-    <Compile Include="Id3v1\TagTest.AlbumGetTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.AlbumSetTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.ClearTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.CommentGetTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.CommentSetTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.ConstructorTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.ConstructorTest01.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.ConstructorTest02.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.DefaultStringHandlerGetTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Id3v1\TagTest.DefaultStringHandlerSetTest.g.cs">
-      <DependentUpon>TagTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="Id3v2\Frames\AttachedPictureFrameTest.DataGetTest.g.cs">
       <DependentUpon>AttachedPictureFrameTest.cs</DependentUpon>
     </Compile>
@@ -3791,170 +4365,485 @@
     <Compile Include="Xmp\XmpTagTest.ExposureTimeSetTest.g.cs">
       <DependentUpon>XmpTagTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Xmp\XmpTagTest.GetLangAltNodeTest.g.cs">
+      <DependentUpon>XmpTagTest.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="samples\apple_tags.m4a" />
-    <Content Include="samples\bgo_658920.m4a" />
-    <Content Include="samples\bgo_676934.m4a" />
-    <Content Include="samples\bgo_701689.m4a" />
-    <Content Include="samples\remove_tags.mp3" />
+    <None Include="samples\apple_tags.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\bgo_658920.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\bgo_676934.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\bgo_701689.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\remove_tags.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="samples\sample.aac">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Content Include="samples\sample.aif" />
-    <Content Include="samples\sample.avi" />
-    <Content Include="samples\sample.jpg" />
-    <Content Include="samples\sample.m4a" />
-    <Content Include="samples\sample.m4v" />
-    <Content Include="samples\sample.wma" />
-    <Content Include="samples\sample_badifdentrytype.jpg" />
-    <Content Include="samples\sample_bgo493530.jpg" />
-    <Content Include="samples\sample_bgo624097.jpg" />
-    <Content Include="samples\sample_bgo625367.jpg" />
-    <Content Include="samples\sample_bgo631333.jpg" />
-    <Content Include="samples\sample_both.mp3" />
-    <Content Include="samples\sample_canon_bibble5.jpg" />
-    <Content Include="samples\sample_canon_bibble5_16bit.tiff" />
-    <Content Include="samples\sample_canon_bibble5_8bit.tiff" />
-    <Content Include="samples\sample_canon_dpp_16bit.tiff" />
-    <Content Include="samples\sample_canon_dpp_8bit.tiff" />
-    <Content Include="samples\sample_canon_zoombrowser.jpg" />
-    <Content Include="samples\sample_emptycomment.jpg" />
-    <Content Include="samples\sample_exiftool.gif" />
-    <Content Include="samples\sample_exiftool_long_comment.gif" />
-    <Content Include="samples\sample_exiftool_tangled1.gif" />
-    <Content Include="samples\sample_exiftool_tangled2.gif" />
-    <Content Include="samples\sample_exiftool_tangled3.gif" />
-    <Content Include="samples\sample_gimp.gif" />
-    <Content Include="samples\sample_gimp.png" />
-    <Content Include="samples\sample_gimp.tiff" />
-    <Content Include="samples\sample_gimp_exiftool.jpg" />
-    <Content Include="samples\sample_gimp_lzw.tiff" />
-    <Content Include="samples\sample_gimp_pngcrush.png" />
-    <Content Include="samples\sample_invalidifdoffset.jpg" />
-    <Content Include="samples\sample_iptc1.jpg" />
-    <Content Include="samples\sample_iptc2.jpg" />
-    <Content Include="samples\sample_iptc3.jpg" />
-    <Content Include="samples\sample_nikon1.jpg" />
-    <Content Include="samples\sample_nikon1_bibble5.jpg" />
-    <Content Include="samples\sample_nikon1_bibble5_16bit.tiff" />
-    <Content Include="samples\sample_nikon1_bibble5_8bit.tiff" />
-    <Content Include="samples\sample_nikon1_viewnx_16bit.tiff" />
-    <Content Include="samples\sample_nikon1_viewnx_8bit.tiff" />
-    <Content Include="samples\sample_nikon2.jpg" />
-    <Content Include="samples\sample_nikon2_bibble5.jpg" />
-    <Content Include="samples\sample_nikon2_bibble5_16bit.tiff" />
-    <Content Include="samples\sample_nikon2_bibble5_8bit.tiff" />
-    <Content Include="samples\sample_nikon2_viewnx_16bit.tiff" />
-    <Content Include="samples\sample_nikon2_viewnx_8bit.tiff" />
-    <Content Include="samples\sample_nikon3.jpg" />
-    <Content Include="samples\sample_nikon4.jpg" />
-    <Content Include="samples\sample_no_metadata.jpg" />
-    <Content Include="samples\sample_null_orientation.jpg" />
-    <Content Include="samples\sample_olympus1.jpg" />
-    <Content Include="samples\sample_olympus2.jpg" />
-    <Content Include="samples\sample_olympus3.jpg" />
-    <Content Include="samples\sample_olympus_corrupt_mn.jpg" />
-    <Content Include="samples\sample_panasonic.jpg" />
-    <Content Include="samples\sample_recursive_ifd.jpg" />
-    <Content Include="samples\sample_replaygain.mp3" />
-    <Content Include="samples\sample_sony1.jpg" />
-    <Content Include="samples\sample_sony2.jpg" />
-    <Content Include="samples\sample_sony_DSC-RX100M4.jpg" />
-    <Content Include="samples\sample_tangled1.jpg" />
-    <Content Include="samples\sample_tangled2.jpg" />
-    <Content Include="samples\sample_tangled3.jpg" />
-    <Content Include="samples\sample_tangled4.jpg" />
-    <Content Include="samples\sample_tangled5.jpg" />
-    <Content Include="samples\sample_tangled6.jpg" />
-    <Content Include="samples\sample_unicode5.jpg" />
-    <Content Include="samples\sample_v1_only.mp3" />
-    <Content Include="samples\sample_v2_3_ext_header.mp3" />
-    <Content Include="samples\sample_v2_4_unsynch.mp3" />
-    <Content Include="samples\sample_v2_only.mp3" />
-    <Content Include="samples\sample_xap.jpg" />
-    <Content Include="samples\sample_xmpcrash.jpg" />
-    <Content Include="samples\sample_xmpnullended.jpg" />
-    <Content Include="samples\tmpwrite.aac" />
-    <Content Include="samples\tmpwrite.aif" />
-    <Content Include="samples\tmpwrite.avi" />
-    <Content Include="samples\tmpwrite.m4a" />
-    <Content Include="samples\tmpwrite.m4v" />
-    <Content Include="samples\tmpwrite.wma" />
-    <Content Include="samples\tmpwrite_both.mp3" />
-    <Content Include="samples\tmpwrite_exceed_segment_size.jpg" />
-    <Content Include="samples\tmpwrite_nikon2.jpg" />
-    <Content Include="samples\tmpwrite_nikon3.jpg" />
-    <Content Include="samples\tmpwrite_nikon4.jpg" />
-    <Content Include="samples\tmpwrite_olympus1.jpg" />
-    <Content Include="samples\tmpwrite_olympus2.jpg" />
-    <Content Include="samples\tmpwrite_olympus3.jpg" />
-    <Content Include="samples\tmpwrite_sample_bgo631333.jpg" />
-    <Content Include="samples\tmpwrite_sample_canon_bibble5.jpg" />
-    <Content Include="samples\tmpwrite_sample_canon_bibble5_16bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_canon_bibble5_8bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_canon_dpp_16bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_canon_dpp_8bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_canon_zoombrowser.jpg" />
-    <Content Include="samples\tmpwrite_sample_emptycomment.jpg" />
-    <Content Include="samples\tmpwrite_sample_exiftool.gif" />
-    <Content Include="samples\tmpwrite_sample_exiftool_long_comment.gif" />
-    <Content Include="samples\tmpwrite_sample_exiftool_tangled1.gif" />
-    <Content Include="samples\tmpwrite_sample_exiftool_tangled2.gif" />
-    <Content Include="samples\tmpwrite_sample_exiftool_tangled3.gif" />
-    <Content Include="samples\tmpwrite_sample_gimp.gif" />
-    <Content Include="samples\tmpwrite_sample_gimp.png" />
-    <Content Include="samples\tmpwrite_sample_gimp.tiff" />
-    <Content Include="samples\tmpwrite_sample_gimp_exiftool.jpg" />
-    <Content Include="samples\tmpwrite_sample_gimp_lzw.tiff" />
-    <Content Include="samples\tmpwrite_sample_gimp_pngcrush.png" />
-    <Content Include="samples\tmpwrite_sample_nikon1.jpg" />
-    <Content Include="samples\tmpwrite_sample_nikon1_bibble5.jpg" />
-    <Content Include="samples\tmpwrite_sample_nikon1_bibble5_16bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon1_bibble5_8bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon1_viewnx_16bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon1_viewnx_8bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon2_bibble5.jpg" />
-    <Content Include="samples\tmpwrite_sample_nikon2_bibble5_16bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon2_bibble5_8bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon2_viewnx_16bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_nikon2_viewnx_8bit.tiff" />
-    <Content Include="samples\tmpwrite_sample_no_metadata.jpg" />
-    <Content Include="samples\tmpwrite_sample_null_orientation.jpg" />
-    <Content Include="samples\tmpwrite_sample_panasonic.jpg" />
-    <Content Include="samples\tmpwrite_sample_xap.jpg" />
-    <Content Include="samples\tmpwrite_sony1.jpg" />
-    <Content Include="samples\tmpwrite_sony2.jpg" />
-    <Content Include="samples\tmpwrite_tangled1.jpg" />
-    <Content Include="samples\tmpwrite_tangled2.jpg" />
-    <Content Include="samples\tmpwrite_tangled3.jpg" />
-    <Content Include="samples\tmpwrite_tangled4.jpg" />
-    <Content Include="samples\tmpwrite_tangled5.jpg" />
-    <Content Include="samples\tmpwrite_tangled6.jpg" />
-    <Content Include="samples\tmpwrite_v1_only.mp3" />
-    <Content Include="samples\tmpwrite_v2_4_unsynch.mp3" />
-    <Content Include="samples\tmpwrite_v2_only.mp3" />
+    <None Include="samples\sample.aif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.avi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.m4v">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_badifdentrytype.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_bgo493530.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_bgo624097.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_bgo625367.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_bgo631333.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_both.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_canon_bibble5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_canon_bibble5_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_canon_bibble5_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_canon_dpp_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_canon_dpp_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_canon_zoombrowser.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_emptycomment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_exiftool.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_exiftool_long_comment.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_exiftool_tangled1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_exiftool_tangled2.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_exiftool_tangled3.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_gimp.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_gimp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_gimp.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_gimp_exiftool.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_gimp_lzw.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_gimp_pngcrush.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_invalidifdoffset.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_iptc1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_iptc2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_iptc3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon1_bibble5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon1_bibble5_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon1_bibble5_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon1_viewnx_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon1_viewnx_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon2_bibble5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon2_bibble5_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon2_bibble5_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon2_viewnx_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon2_viewnx_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_nikon4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_no_metadata.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_null_orientation.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_olympus1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_olympus2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_olympus3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_olympus_corrupt_mn.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_panasonic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_recursive_ifd.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_replaygain.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_sony1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_sony2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_sony_DSC-RX100M4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_tangled1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_tangled2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_tangled3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_tangled4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_tangled5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_tangled6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_unicode5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_v1_only.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_v2_3_ext_header.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_v2_4_unsynch.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_v2_only.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_xap.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_xmpcrash.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_xmpnullended.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.aac">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.aif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.avi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.m4v">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_both.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_exceed_segment_size.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_nikon2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_nikon3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_nikon4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_olympus1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_olympus2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_olympus3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_bgo631333.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_canon_bibble5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_canon_bibble5_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_canon_bibble5_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_canon_dpp_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_canon_dpp_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_canon_zoombrowser.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_emptycomment.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_exiftool.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_exiftool_long_comment.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_exiftool_tangled1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_exiftool_tangled2.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_exiftool_tangled3.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_gimp.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_gimp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_gimp.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_gimp_exiftool.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_gimp_lzw.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_gimp_pngcrush.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon1_bibble5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon1_bibble5_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon1_bibble5_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon1_viewnx_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon1_viewnx_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon2_bibble5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon2_bibble5_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon2_bibble5_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon2_viewnx_16bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_nikon2_viewnx_8bit.tiff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_no_metadata.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_null_orientation.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_panasonic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sample_xap.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sony1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_sony2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_tangled1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_tangled2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_tangled3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_tangled4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_tangled5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_tangled6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_v1_only.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_v2_4_unsynch.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_v2_only.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="samples\LICENSE" />
-    <None Include="samples\sample.ape" />
-    <None Include="samples\sample.dsf" />
-    <None Include="samples\sample.flac" />
-    <None Include="samples\sample.mpc" />
-    <None Include="samples\sample.ogg" />
-    <None Include="samples\sample.opus" />
-    <None Include="samples\sample_replaygain.flac" />
-    <None Include="samples\sample_v8.mpc" />
-    <None Include="samples\tmpwrite.dsf" />
-    <None Include="samples\tmpwrite.flac" />
-    <None Include="samples\tmpwrite.mkv" />
-    <None Include="samples\tmpwrite.mpc" />
-    <None Include="samples\tmpwrite.ogg" />
-    <None Include="samples\tmpwrite.opus" />
-    <None Include="samples\tmpwrite_v8.mpc" />
-    <None Include="samples\Turning Lime.mkv" />
-    <None Include="samples\vector.bin" />
+    <None Include="samples\LICENSE">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.ape">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.dsf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.flac">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.mpc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample.opus">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_replaygain.flac">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\sample_v8.mpc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.dsf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.flac">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.mkv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.mpc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite.opus">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\tmpwrite_v8.mpc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\Turning Lime.mkv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="samples\vector.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
